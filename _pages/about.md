@@ -24,8 +24,10 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Hi 👋! This is **Taz**. Welcome to my website 😊. 
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Currently, I am a postdoc in the [Cardiff NLP group](https://cardiffnlp.github.io/) working with [Prof Steven Schockaert](https://www.turing.ac.uk/people/turing-fellows/steven-schockaert) on efficient and scalable graph representation based methods for **reasoning** and natural language understanding. On my quest to improve reasoning algorithms, I have also constructed **evals** to benchmark GNNs, LLMs and LRMs for graphical reasoning and researched **document level information retrieval**.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Before this, I was a quantum physicist and did my interdisciplinary PhD in **Quantum Control** supervised by [Prof Edmond Jonckheere](https://ee.usc.edu/~jonckhee/) at [USC Viterbi](https://minghsiehece.usc.edu/) and [Dr. Carrie Weidner](https://www.bristol.ac.uk/qet-labs/research/weidner-group/) at [QET Labs](https://www.bristol.ac.uk/qet-labs/). I got my undergraduate degree in Physics from [Imperial College London](https://www.imperial.ac.uk/). 
+
+I also like 🏃. 
