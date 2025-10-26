@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-3 first author papers accepted at ICLR, ACL, NeurIPS 2025 🎉! 
+3 first author papers accepted at ICLR, ACL, NeurIPS 2025 🎉!
