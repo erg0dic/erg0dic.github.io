@@ -405,16 +405,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
+            },},{id: "news-i-passed-my-viva-and-am-officially-phdone",
+          title: 'I passed my Viva and am officially PhDone!',
           description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+          section: "News",},{id: "news-3-first-author-papers-accepted-at-iclr-acl-neurips-2025",
+          title: '3 first author papers accepted at ICLR, ACL, NeurIPS 2025 🎉!',
           description: "",
           section: "News",},{
         id: 'social-email',
