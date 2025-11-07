@@ -1,2 +1,56 @@
 ---
 ---
+@inproceedings{nora,
+  title    = {Systematic Relational Reasoning With Epistemic Graph Neural Networks},
+  author   = {Anirban Das* and Irtaza Khalid* and Steven Schockaert},
+  year     = {2025},
+  booktitle= {Thirty-Ninth Conference on Neural Information Processing Systems (NeurIPS)},
+  abstract = {Designing models that can learn to reason in a systematic way is an important and long-standing challenge. In recent years, a wide range of solutions have been proposed for the specific case of systematic relational reasoning, including Neuro-Symbolic approaches, variants of the Transformer architecture, and specialised Graph Neural Networks. However, existing benchmarks for systematic relational reasoning focus on an overly simplified setting, based on the assumption that reasoning can be reduced to composing relational paths. In fact, this assumption is hard-baked into the architecture of several recent models, leading to approaches that can perform well on existing benchmarks but are difficult to generalise to other settings. To support further progress in the field of systematic relational reasoning with neural networks, we introduce NoRA, a new benchmark which adds several levels of difficulty and requires models to go beyond path-based reasoning.},
+  abbr     = {NeurIPS},
+  code     = {https://github.com/erg0dic/gnn-sg},
+  html     = {https://openreview.net/forum?id=qNp86ByQlN},
+  poster   = {https://erg0dic.github.io/assets/pdf/epignn_poster.pdf},
+  selected = {true}
+}
+@inproceedings{epignn,
+  title    = {When No Paths Lead to Rome: Benchmarking Systematic Neural Relational Reasoning},
+  author   = {Irtaza Khalid and Steven Schockaert},
+  year     = {2025},
+  booktitle= {The Thirteenth International Conference on Learning Representations (ICLR)},
+  abstract = {Developing models that can learn to reason is a notoriously challenging problem. We focus on reasoning in relational domains, where the use of Graph Neural Networks (GNNs) seems like a natural choice. However, previous work has shown that regular GNNs lack the ability to systematically generalize from training examples on test graphs requiring longer inference chains, which fundamentally limits their reasoning abilities. A common solution relies on neuro-symbolic methods that systematically reason by learning rules, but their scalability is often limited and they tend to make unrealistically strong assumptions, e.g.\ that the answer can always be inferred from a single relational path. We propose the Epistemic GNN (EpiGNN), a novel parameter-efficient and scalable GNN architecture with an epistemic inductive bias for systematic reasoning. Node embeddings in EpiGNNs are treated as epistemic states, and message passing is implemented accordingly. We show that EpiGNNs achieve state-of-the-art results on link prediction tasks that require systematic reasoning. Furthermore, for inductive knowledge graph completion, EpiGNNs rival the performance of state-of-the-art specialized approaches. Finally, we introduce two new benchmarks that go beyond standard relational reasoning by requiring the aggregation of information from multiple paths. Here, existing neuro-symbolic approaches fail, yet EpiGNNs learn to reason accurately.},
+  abbr     = {NeurIPS},
+  code     = {https://github.com/axd353/WhenNoPathsLeadToRome/},
+  html     = {https://arxiv.org/abs/2510.23532},
+  poster   = {https://erg0dic.github.io/assets/pdf/neurips_nora_poster.pdf},
+  selected = {true}
+}
+@inproceedings{llms-are-shallow-disjunctive-reasoners,
+  title     = {Large Language and Reasoning Models are Shallow Disjunctive Reasoners},
+  author    = {Irtaza Khalid, Amir Masoud Nourollah, Steven Schockaert},
+  year      = {2025},
+  url       = {https://aclanthology.org/2025.acl-long.433/},
+  poster   = {https://erg0dic.github.io/assets/pdf/acl-poster.pdf},
+  abbr      = {ACL main},
+  booktitle = {Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  pages     = {8843--8869},
+  doi       = {10.18653/v1/2025.acl-long.433},
+  publisher = {Association for Computational Linguistics},
+  abstract = {Large Language Models (LLMs) have been found to struggle with systematic reasoning. Even on tasks where they appear to perform well, their performance often depends on shortcuts, rather than on genuine reasoning abilities, leading them to collapse on out-of-distribution (OOD) examples. Post-training strategies based on reinforcement learning and chain-of-thought prompting have recently been hailed as a step change. However, little is known about the potential of the resulting ``Large Reasoning Models'' (LRMs) beyond maths and programming-based problem solving, where genuine OOD problems can be sparse. In this paper, we focus on tasks that require systematic relational composition for qualitative spatial and temporal reasoning. The setting allows fine control over problem difficulty to precisely measure OOD generalization. We find that, zero-shot LRMs generally outperform their LLM counterparts in single-path reasoning tasks but struggle in the multi-path setting. Whilst showing comparatively better results, fine-tuned LLMs are also not capable of multi-path generalization. We also provide evidence for the behavioral interpretation for this, i.e., that LRMs are shallow disjunctive reasoners.},
+  selected  = {true}
+}
+
+@article{sample-efficient-quantum-rl,
+  title = {Sample-efficient model-based reinforcement learning for quantum control},
+  author = {Khalid, Irtaza and Weidner, Carrie A. and Jonckheere, Edmond A. and Schirmer, Sophie G. and Langbein, Frank C.},
+  journal = {Phys. Rev. Res.},
+  year = {2023},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevResearch.5.043002},
+  abbr = {PR.Res.},
+  url = {https://link.aps.org/doi/10.1103/PhysRevResearch.5.043002},
+  code = {https://github.com/erg0dic/transmon_public},
+  poster = {https://erg0dic.github.io/assets/pdf/BQIT23_poster.pdf},
+  selected = {true},
+  abstract = {We propose a model-based reinforcement learning (RL) approach for noisy time-dependent gate optimization with reduced sample complexity over model-free RL. Sample complexity is defined as the number of controller interactions with the physical system. Leveraging an inductive bias, inspired by recent advances in neural ordinary differential equations (ODEs), we use an autodifferentiable ODE, parametrized by a learnable Hamiltonian ansatz, to represent the model approximating the environment, whose time-dependent part, including the control, is fully known. Control alongside Hamiltonian learning of continuous time-independent parameters is addressed through interactions with the system. We demonstrate an order of magnitude advantage in sample complexity of our method over standard model-free RL in preparing some standard unitary gates with closed and open system dynamics, in realistic computational experiments incorporating single-shot measurements, arbitrary Hilbert space truncations, and uncertainty in Hamiltonian parameters. Also, the learned Hamiltonian can be leveraged by existing control methods like GRAPE (gradient ascent pulse engineering) for further gradient-based optimization with the controllers found by RL as initializations. Our algorithm, which we apply to nitrogen vacancy (NV) centers and transmons, is well suited for controlling partially characterized one- and two-qubit systems.}
+}
+
