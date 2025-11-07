@@ -25,7 +25,7 @@ ninja.data = [{
           },
         },{id: "nav-talks",
           title: "talks",
-          description: "You can find below some of my invited talks and presentations.",
+          description: "You can find some of my invited talks and presentations below.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/talks/";
@@ -59,12 +59,7 @@ ninja.data = [{
             window.open("https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2", "_blank");
           
         },
-      },{id: "books-the-godfather",
-          title: 'The Godfather',
-          description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/the_godfather/";
-            },},{id: "news-i-passed-my-viva-and-am-officially-phdone",
+      },{id: "news-i-passed-my-viva-and-am-officially-phdone",
           title: 'I passed my Viva and am officially PhDone!',
           description: "",
           section: "News",},{id: "news-3-first-author-papers-accepted-at-iclr-acl-neurips-2025",
