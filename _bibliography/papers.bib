@@ -63,6 +63,7 @@
   code = {https://github.com/erg0dic/NoisyQPT},
   selected = {false},
   abbr = {MSc Thesis},
+  html = {https://erg0dic.github.io/assets/pdf/msci-thesis.pdf},
 }
 
 @article{PhysRevA.107.032606,
@@ -97,12 +98,12 @@
   doi={10.1109/CDC45484.2021.9683463},
   abstract = {We explore the use of policy gradient methods in reinforcement learning for quantum control via energy landscape shaping of XX-Heisenberg spin chains in a model agnostic fashion. Their performance is compared to finding controllers using gradient-based L-BFGS optimisation with restarts, with full access to an analytical model. Hamiltonian noise and coarse-graining of fidelity measurements are considered. Reinforcement learning is able to tackle challenging, noisy quantum control problems where L-BFGS optimization algorithms struggle to perform well. Robustness analysis under different levels of Hamiltonian noise indicates that controllers found by reinforcement learning appear to be less affected by noise than those found with L-BFGS.
 },
-  abbr = {CDC}
+  abbr = {IEEE CDC}
 }
 
   @article{unifying-robustness-measures,
   author={O’Neil*, Sean P. and Khalid*, Irtaza and Rompokos, A. A. and Weidner, Carrie A. and Langbein, Frank C. and Schirmer, Sophie G. and Jonckheere, Edmond A.},
-  journal={IEEE Control Systems Letters}, 
+  journal={IEEE Control Systems Letters and CDC 2023}, 
   title={Analyzing and Unifying Robustness Measures for Excitation Transfer Control in Spin Networks}, 
   year={2023},
   volume={7},
@@ -111,7 +112,8 @@
   html={https://ieeexplore.ieee.org/abstract/document/10133835},
   code = {https://github.com/qyber-black/code-robustness-of-energy-landscape-control-sensitivity-vs-rim},
   doi={10.1109/LCSYS.2023.3279797},
-  abstract = {Recent achievements in quantum control have resulted in advanced techniques for designing controllers for applications in quantum communication, computing, and sensing. However, the susceptibility of such systems to noise and uncertainties necessitates robust controllers that perform effectively under these conditions to realize the full potential of quantum devices. The time-domain log-sensitivity and a recently introduced robustness infidelity measure (RIM) are two means to quantify controller robustness in quantum systems. The former can be found analytically, while the latter requires Monte-Carlo sampling. In this letter, the correlation between the log-sensitivity and the RIM for evaluating the robustness of single excitation transfer fidelity in spin chains and rings in the presence of dephasing is investigated. We show that the expected differential sensitivity of the error agrees with the differential sensitivity of the RIM, where the expectation is over the error probability distribution. Statistical analysis also demonstrates that the log-sensitivity and the RIM are linked via the differential sensitivity, and that the differential sensitivity and RIM are highly concordant. This unification of two means (one analytic and one via sampling) to assess controller robustness in a variety of realistic scenarios provides a first step in unifying various tools to model and assess robustness of quantum controllers.}
+  abstract = {Recent achievements in quantum control have resulted in advanced techniques for designing controllers for applications in quantum communication, computing, and sensing. However, the susceptibility of such systems to noise and uncertainties necessitates robust controllers that perform effectively under these conditions to realize the full potential of quantum devices. The time-domain log-sensitivity and a recently introduced robustness infidelity measure (RIM) are two means to quantify controller robustness in quantum systems. The former can be found analytically, while the latter requires Monte-Carlo sampling. In this letter, the correlation between the log-sensitivity and the RIM for evaluating the robustness of single excitation transfer fidelity in spin chains and rings in the presence of dephasing is investigated. We show that the expected differential sensitivity of the error agrees with the differential sensitivity of the RIM, where the expectation is over the error probability distribution. Statistical analysis also demonstrates that the log-sensitivity and the RIM are linked via the differential sensitivity, and that the differential sensitivity and RIM are highly concordant. This unification of two means (one analytic and one via sampling) to assess controller robustness in a variety of realistic scenarios provides a first step in unifying various tools to model and assess robustness of quantum controllers.},
+  abbr = {IEEE CDC}
 }
 
 @inproceedings{
@@ -131,6 +133,7 @@ abstract = {Systematic generalization is the ability of a machine learning model
       year={2025},
       url={https://arxiv.org/abs/2503.05371}, 
       booktitle={arXiv preprint arXiv:2503.05371},
+      code = {https://github.com/cardiffnlp/dialz},
       abbr = {AACL},
       abstract = {We present a novel approach to bias mitigation in large language models (LLMs) by applying steering vectors to modify model activations in forward passes. We compute 8 steering vectors, each corresponding to a different social bias axis, such as age, gender, or race, on a training subset of the BBQ dataset and compare the effectiveness of these to 3 additional bias mitigation methods across 4 datasets. When optimized on the BBQ dataset, our individually tuned steering vectors achieve average improvements of 12.8% on BBQ, 8.3% on CLEAR-Bias, and 1% on StereoSet, and show improvements over prompting and Self-Debias in all cases, and improvements over fine-tuning in 12 out of 17 evaluations. In addition, steering vectors showed the lowest impact on MMLU scores of the four bias mitigation methods tested. The work presents the first systematic investigation of steering vectors for bias mitigation, and we demonstrate that they are a powerful and computationally efficient strategy for reducing bias in LLMs, with broader implications for enhancing AI safety.
 }
