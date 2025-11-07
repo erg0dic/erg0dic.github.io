@@ -2,7 +2,7 @@
 layout: page
 permalink: /talks/
 title: talks
-description: You can find below some of my invited talks and presentations.
+description: You can find some of my invited talks and presentations below.
 nav: true
 nav_order: 4
 ---
