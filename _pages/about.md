@@ -30,6 +30,6 @@ Currently, I am a postdoc in the [Cardiff NLP group](https://cardiffnlp.github.i
 
 I also helped co-found and run a health tech company called [Gray Scrubs AI](https://www.grayscrubsai.com/) that provides mission-critical surgical and administrative compliance tools using on-edge, state-of-the-art vision and audio AI.
 
-Before this, I was a quantum physicist and did my interdisciplinary PhD in **Quantum Control**, supervised by [Prof Edmond Jonckheere](https://ee.usc.edu/~jonckhee/) at [USC Viterbi](https://minghsiehece.usc.edu/) and [Carrie Weidner](https://www.bristol.ac.uk/qet-labs/research/weidner-group/) at [QET Labs](https://www.bristol.ac.uk/qet-labs/), Frank Langbein and Sophie Schirmer. I got my undergraduate degree in Physics from [Imperial College London](https://www.imperial.ac.uk/).
+Before this, I was a quantum physicist and did my interdisciplinary PhD in **Quantum Control**, supervised by [Prof Edmond Jonckheere](https://ee.usc.edu/~jonckhee/) at [USC Viterbi](https://minghsiehece.usc.edu/) and [Carrie Weidner](https://www.bristol.ac.uk/qet-labs/research/weidner-group/) at [QET Labs](https://www.bristol.ac.uk/qet-labs/), Frank Langbein at Cardiff University and Sophie Schirmer. I got my undergraduate degree in Physics from [Imperial College London](https://www.imperial.ac.uk/).
 
 I also like to 🏃.
