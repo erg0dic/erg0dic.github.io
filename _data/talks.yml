@@ -1,6 +1,29 @@
-- title: "Epistemic Graph Neural Networks for Systematic Relational Reasoning"
+- title: "Large Language and Reasoning Models are Shallow Disjunctive Reasoners"
   date: 2025-04
   location: "Remote"
-  pdf: "/assets/pdf/slides.pdf"
-  video: "https://www.youtube.com/"
-  description: "New arch for Systematic reasoning"
+  pdf: "/assets/pdf/acl-llms-shallow-slides.pdf"
+  description: "Benchmarking LLMs and LRMs on the STaR dataset reveals shallow reasoning and heuristic exploitation."
+
+- title: "Deepseek R1 spills the post-training beans"
+  date: 2025-02
+  location: "Learning and Reasoning Seminar # 1 @ Cardiff"
+  pdf: "/assets/pdf/learn-seminar-1.pdf"
+  description: "Intro to Post-training for reasoning following the latest open source advancements."
+
+- title: "Epistemic Graph Neural Networks for Systematic Relational Reasoning"
+  date: 2024-11
+  location: "Remote"
+  pdf: "/assets/pdf/EpiGNN.pdf"
+  description: "Intro to the highly challenging task of Systematic Generalization using Graph Neural Networks and a novel architecture that addresses this for the relational/symbolic domain."
+
+- title: "Machine Learning methods for Robust Quantum Optimal Control"
+  date: 2024-04
+  location: "Remote"
+  pdf: "/assets/pdf/viva-slides.pdf"
+  description: "Viva Talk for my PhD Defense."
+
+- title: "Towards improved sample complexity using a quantum model based SAC"
+  date: 2022-08
+  location: "MLQC^2 Workshop @ Nordita, Stockholm"
+  pdf: "/assets/pdf/mlqcqc.pdf"
+  description: "I present progress on a model based RL algorithm I was working on for quantum control mixing neural ODEs, Hamiltonian learning and reinforcement learning."
