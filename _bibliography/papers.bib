@@ -7,9 +7,9 @@
   booktitle= {Thirty-Ninth Conference on Neural Information Processing Systems (NeurIPS)},
   abstract = {Designing models that can learn to reason in a systematic way is an important and long-standing challenge. In recent years, a wide range of solutions have been proposed for the specific case of systematic relational reasoning, including Neuro-Symbolic approaches, variants of the Transformer architecture, and specialised Graph Neural Networks. However, existing benchmarks for systematic relational reasoning focus on an overly simplified setting, based on the assumption that reasoning can be reduced to composing relational paths. In fact, this assumption is hard-baked into the architecture of several recent models, leading to approaches that can perform well on existing benchmarks but are difficult to generalise to other settings. To support further progress in the field of systematic relational reasoning with neural networks, we introduce NoRA, a new benchmark which adds several levels of difficulty and requires models to go beyond path-based reasoning.},
   abbr     = {NeurIPS},
-  code     = {https://github.com/erg0dic/gnn-sg},
-  html     = {https://openreview.net/forum?id=qNp86ByQlN},
-  poster   = {https://erg0dic.github.io/assets/pdf/epignn_poster.pdf},
+  code     = {https://github.com/axd353/WhenNoPathsLeadToRome/},
+  html     = {https://arxiv.org/abs/2510.23532},
+  poster   = {https://erg0dic.github.io/assets/pdf/neurips_nora_poster.pdf},
   selected = {true}
 }
 @inproceedings{epignn,
@@ -18,10 +18,10 @@
   year     = {2025},
   booktitle= {The Thirteenth International Conference on Learning Representations (ICLR)},
   abstract = {Developing models that can learn to reason is a notoriously challenging problem. We focus on reasoning in relational domains, where the use of Graph Neural Networks (GNNs) seems like a natural choice. However, previous work has shown that regular GNNs lack the ability to systematically generalize from training examples on test graphs requiring longer inference chains, which fundamentally limits their reasoning abilities. A common solution relies on neuro-symbolic methods that systematically reason by learning rules, but their scalability is often limited and they tend to make unrealistically strong assumptions, e.g.\ that the answer can always be inferred from a single relational path. We propose the Epistemic GNN (EpiGNN), a novel parameter-efficient and scalable GNN architecture with an epistemic inductive bias for systematic reasoning. Node embeddings in EpiGNNs are treated as epistemic states, and message passing is implemented accordingly. We show that EpiGNNs achieve state-of-the-art results on link prediction tasks that require systematic reasoning. Furthermore, for inductive knowledge graph completion, EpiGNNs rival the performance of state-of-the-art specialized approaches. Finally, we introduce two new benchmarks that go beyond standard relational reasoning by requiring the aggregation of information from multiple paths. Here, existing neuro-symbolic approaches fail, yet EpiGNNs learn to reason accurately.},
-  abbr     = {NeurIPS},
-  code     = {https://github.com/axd353/WhenNoPathsLeadToRome/},
-  html     = {https://arxiv.org/abs/2510.23532},
-  poster   = {https://erg0dic.github.io/assets/pdf/neurips_nora_poster.pdf},
+  abbr     = {ICLR},
+  code     = {https://github.com/erg0dic/gnn-sg},
+  html     = {https://openreview.net/forum?id=qNp86ByQlN},
+  poster   = {https://erg0dic.github.io/assets/pdf/epignn_poster.pdf},
   selected = {true}
 }
 @inproceedings{llms-are-shallow-disjunctive-reasoners,
@@ -54,3 +54,99 @@
   abstract = {We propose a model-based reinforcement learning (RL) approach for noisy time-dependent gate optimization with reduced sample complexity over model-free RL. Sample complexity is defined as the number of controller interactions with the physical system. Leveraging an inductive bias, inspired by recent advances in neural ordinary differential equations (ODEs), we use an autodifferentiable ODE, parametrized by a learnable Hamiltonian ansatz, to represent the model approximating the environment, whose time-dependent part, including the control, is fully known. Control alongside Hamiltonian learning of continuous time-independent parameters is addressed through interactions with the system. We demonstrate an order of magnitude advantage in sample complexity of our method over standard model-free RL in preparing some standard unitary gates with closed and open system dynamics, in realistic computational experiments incorporating single-shot measurements, arbitrary Hilbert space truncations, and uncertainty in Hamiltonian parameters. Also, the learned Hamiltonian can be leveraged by existing control methods like GRAPE (gradient ascent pulse engineering) for further gradient-based optimization with the controllers found by RL as initializations. Our algorithm, which we apply to nitrogen vacancy (NV) centers and transmons, is well suited for controlling partially characterized one- and two-qubit systems.}
 }
 
+@misc{noisy-qpt,
+  author = {Irtaza Khalid},
+  howpublished = {MSc Thesis, Imperial College London},
+  title = {Noisy Quantum Process Tomography under varying preparation designs},
+  year = {2020},
+  url = {https://erg0dic.github.io/assets/pdf/msci-thesis.pdf},
+  code = {https://github.com/erg0dic/NoisyQPT},
+  selected = {false},
+}
+
+@article{PhysRevA.107.032606,
+  title = {Statistically characterizing robustness and fidelity of quantum controls and quantum control algorithms},
+  author = {Khalid, Irtaza and Weidner, Carrie A. and Jonckheere, Edmond A. and Shermer, Sophie G. and Langbein, Frank C.},
+  journal = {Phys. Rev. A},
+  volume = {107},
+  issue = {3},
+  pages = {032606},
+  numpages = {22},
+  year = {2023},
+  month = {Mar},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevA.107.032606},
+  url = {https://link.aps.org/doi/10.1103/PhysRevA.107.032606},
+  code = {https://github.com/qyber-black/Code-RobChar},
+  abstract = {Robustness of quantum operations or controls is important to build reliable quantum devices. The robustness-infidelity measure (RIM$_p$) is introduced to statistically quantify in a single measure the robustness and fidelity of a controller as the $p$⁢th order Wasserstein distance between the fidelity distribution of the controller under any uncertainty and an ideal fidelity distribution. The RIM$_p$ is the $p$⁢th root of the $p$⁢th raw moment of the infidelity distribution. Using a metrization argument, we justify why $RIM_1$ (the average infidelity) is a good practical robustness measure. Based on the RIM$_p$, an algorithmic robustness-infidelity measure (ARIM) is developed to quantify the expected robustness and fidelity of controllers found by a control algorithm. The utility of the RIM and ARIM is demonstrated on energy landscape controllers of spin-networks subject to Hamiltonian uncertainty. The robustness and fidelity of individual controllers as well as the expected robustness and fidelity of controllers found by different popular quantum control algorithms are characterized. For algorithm comparisons, stochastic and nonstochastic optimization objectives are considered. Although high fidelity and robustness are often conflicting objectives, some high-fidelity, robust controllers can usually be found, irrespective of the choice of the quantum control algorithm. However, for noisy or stochastic optimization objectives, adaptive sequential decision-making approaches, such as reinforcement learning, have a cost advantage compared to standard control algorithms and, in contrast, the high infidelities obtained are more consistent with high RIM values for low noise levels.},
+  selected = {false}
+}
+
+@inproceedings{rl-vs-lbfgs,
+  author={Khalid, Irtaza and Weidner, Carrie A. and Jonckheere, Edmond A. and Schirmer, Sophie G. and Langbein, Frank C.},
+  booktitle={2021 60th IEEE Conference on Decision and Control (CDC)}, 
+  title={Reinforcement Learning vs. Gradient-Based Optimisation for Robust Energy Landscape Control of Spin-1/2 Quantum Networks}, 
+  year={2021},
+  volume={},
+  number={},
+  pages={4133-4139},
+  html={https://ieeexplore.ieee.org/document/9683463},
+  code = {https://github.com/qyber-black/Code-RobChar},
+  doi={10.1109/CDC45484.2021.9683463},
+  abstract = {We explore the use of policy gradient methods in reinforcement learning for quantum control via energy landscape shaping of XX-Heisenberg spin chains in a model agnostic fashion. Their performance is compared to finding controllers using gradient-based L-BFGS optimisation with restarts, with full access to an analytical model. Hamiltonian noise and coarse-graining of fidelity measurements are considered. Reinforcement learning is able to tackle challenging, noisy quantum control problems where L-BFGS optimization algorithms struggle to perform well. Robustness analysis under different levels of Hamiltonian noise indicates that controllers found by reinforcement learning appear to be less affected by noise than those found with L-BFGS.
+}
+}
+
+  @article{unifying-robustness-measures,
+  author={O’Neil*, Sean P. and Khalid*, Irtaza and Rompokos, A. A. and Weidner, Carrie A. and Langbein, Frank C. and Schirmer, Sophie G. and Jonckheere, Edmond A.},
+  journal={IEEE Control Systems Letters}, 
+  title={Analyzing and Unifying Robustness Measures for Excitation Transfer Control in Spin Networks}, 
+  year={2023},
+  volume={7},
+  number={},
+  pages={1783-1788},
+  html={https://ieeexplore.ieee.org/abstract/document/10133835},
+  code = {https://github.com/qyber-black/code-robustness-of-energy-landscape-control-sensitivity-vs-rim},
+  doi={10.1109/LCSYS.2023.3279797},
+  abstract = {Recent achievements in quantum control have resulted in advanced techniques for designing controllers for applications in quantum communication, computing, and sensing. However, the susceptibility of such systems to noise and uncertainties necessitates robust controllers that perform effectively under these conditions to realize the full potential of quantum devices. The time-domain log-sensitivity and a recently introduced robustness infidelity measure (RIM) are two means to quantify controller robustness in quantum systems. The former can be found analytically, while the latter requires Monte-Carlo sampling. In this letter, the correlation between the log-sensitivity and the RIM for evaluating the robustness of single excitation transfer fidelity in spin chains and rings in the presence of dephasing is investigated. We show that the expected differential sensitivity of the error agrees with the differential sensitivity of the RIM, where the expectation is over the error probability distribution. Statistical analysis also demonstrates that the log-sensitivity and the RIM are linked via the differential sensitivity, and that the differential sensitivity and RIM are highly concordant. This unification of two means (one analytic and one via sampling) to assess controller robustness in a variety of realistic scenarios provides a first step in unifying various tools to model and assess robustness of quantum controllers.}
+}
+
+@inproceedings{
+khalid2024star,
+title={{ST}aR: Benchmarking Spatio-Temporal Reasoning for systematic generalization},
+author={Irtaza Khalid and Steven Schockaert},
+booktitle={The First Workshop on System-2 Reasoning at Scale, NeurIPS'24},
+year={2024},
+url={https://openreview.net/forum?id=M7pFDngBgm},
+abbr = {NeurIPS},
+abstract = {Systematic generalization is the ability of a machine learning model to perform well on a family of test examples that are out-of-distribution with respect to the training examples in a systematic way. To succeed, compositionality of useful information learned from the training data is required. One well-studied problem instance is single path relational reasoning where a model is provided with small relational graphs and is tasked with predicting the relation between a head and target node. Crucially, this task can be solved by identifying a single resolution path between the head and the target and then using rules to sequentially compose relations until a relationship between the head and target node can be inferred. Previous work has shown that graph-based transformers and text-based large language models perform poorly on single path reasoning tasks, while some rule-based and neuro-symbolic methods can solve them with near-perfect accuracy. In this paper, we propose a Spatio-Temporal Reasoning benchmark (STaR) based on classic relational calculi, which generalizes the single path relational reasoning problem to require the aggregation of partial information from multiple paths between the head and target node. Our experiments demonstrate that many state-of-the-art neuro-symbolic, transformer and graph neural network methods perform poorly on STaR.}
+}
+
+@misc{siddique2025shiftingperspectivessteeringvectors,
+      title={Shifting Perspectives: Steering Vectors for Robust Bias Mitigation in LLMs}, 
+      author={Zara Siddique and Irtaza Khalid and Liam D. Turner and Luis Espinosa-Anke},
+      year={2025},
+      url={https://arxiv.org/abs/2503.05371}, 
+      booktitle={arXiv preprint arXiv:2503.05371},
+      abbr = {AACL},
+      abstract = {We present a novel approach to bias mitigation in large language models (LLMs) by applying steering vectors to modify model activations in forward passes. We compute 8 steering vectors, each corresponding to a different social bias axis, such as age, gender, or race, on a training subset of the BBQ dataset and compare the effectiveness of these to 3 additional bias mitigation methods across 4 datasets. When optimized on the BBQ dataset, our individually tuned steering vectors achieve average improvements of 12.8% on BBQ, 8.3% on CLEAR-Bias, and 1% on StereoSet, and show improvements over prompting and Self-Debias in all cases, and improvements over fine-tuning in 12 out of 17 evaluations. In addition, steering vectors showed the lowest impact on MMLU scores of the four bias mitigation methods tested. The work presents the first systematic investigation of steering vectors for bias mitigation, and we demonstrate that they are a powerful and computationally efficient strategy for reducing bias in LLMs, with broader implications for enhancing AI safety.
+}
+}
+
+@misc{phdthesis,
+  author = {Irtaza Khalid},
+  howpublished = {PhD Thesis, Cardiff University},
+  title = {Neural Relational Reasoning: Architectures, Benchmarks, and Applications},
+  year = {2024},
+  html = {https://orca.cardiff.ac.uk/id/eprint/170642/1/2024KhalidMI%2C%20PhD.pdf},
+  selected = {false},
+}
+
+@misc{chemistry-potentials,
+    author = {Amir Masoud Nourollah, Irtaza Khalid and Stefano Leoni and Steven Schockaert},
+    howpublished = {Preprint},
+    title = {Benchmarking Compositional generalisation for Learning Inter-atomic Potentials},
+    year = {2025},
+    abbr = {arXiv},
+    abstract = {}
+}
