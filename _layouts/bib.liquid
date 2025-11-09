@@ -236,6 +236,13 @@
       {% if entry.code %}
         <a href="{{ entry.code }}" class="btn btn-sm z-depth-0" role="button">Code</a>
       {% endif %}
+      {%- if entry.huggingface %}
+        <a href="{{ entry.huggingface }}" class="btn btn-sm z-depth-0" role="button">
+          <img src="/assets/img/hf-logo.svg" alt="huggingface" style="height: 13px; vertical-align: middle;">
+        </a>
+      {%- endif %}
+
+
       {% if entry.poster %}
         {% if entry.poster contains '://' %}
           <a href="{{ entry.poster }}" class="btn btn-sm z-depth-0" role="button">Poster</a>
@@ -352,6 +359,12 @@
         <p>{{ entry.abstract }}</p>
       </div>
     {% endif %}
+  
+    {%- if entry.huggingface %}
+      <a href="{{ entry.huggingface }}" class="btn btn-sm z-depth-0" role="button">
+        <img src="/assets/img/huggingface_logo-noborder.svg" alt="GitHub" style="height: 14px; vertical-align: middle;">
+      </a>
+    {%- endif %}
 
     {% if entry.bibtex_show %}
       <!-- Hidden bibtex block -->
