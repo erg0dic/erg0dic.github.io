@@ -242,7 +242,6 @@
         </a>
       {%- endif %}
 
-
       {% if entry.poster %}
         {% if entry.poster contains '://' %}
           <a href="{{ entry.poster }}" class="btn btn-sm z-depth-0" role="button">Poster</a>
@@ -360,12 +359,6 @@
       </div>
     {% endif %}
   
-    {%- if entry.huggingface %}
-      <a href="{{ entry.huggingface }}" class="btn btn-sm z-depth-0" role="button">
-        <img src="/assets/img/huggingface_logo-noborder.svg" alt="GitHub" style="height: 14px; vertical-align: middle;">
-      </a>
-    {%- endif %}
-
     {% if entry.bibtex_show %}
       <!-- Hidden bibtex block -->
       <div class="bibtex hidden">
