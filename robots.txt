@@ -3,7 +3,7 @@ permalink: /robots.txt
 ---
 User-agent: *
 Disallow:
-
-# Disclaimer: The author does not consent to the content on this website be used to train LLMs or future AI models of any kind. 
-# Search and retrieval with attribution is, however, permitted.
 Sitemap: {{ site.baseurl | prepend: site.url }}/sitemap.xml
+
+*Disclaimer*. The author does not consent to the content on this website be used to train LLMs or future AI models of any kind. 
+Search and retrieval with attribution is, however, permitted.
